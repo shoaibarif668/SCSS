@@ -1,0 +1,49 @@
+/*
+1:Can use operators
+2:Can use variables
+3:Nesting
+4:Mixing (with parameters)
+5:partials (writing and calling scss code from different files)
+*/
+
+
+@import "var";
+@import "mixin";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; //10px by default for browser instead of 16px
+}
+
+.main-header{
+    
+    @include flexprop;
+    width: 100vw;
+    height: 100vh;
+    background-color:$main-bg;
+
+    h1{
+        @include textprop(5rem);
+    
+        &:hover{
+            color: white;   
+        }
+        &::after{
+            content: " World";
+        }
+    }
+
+    p{
+        @include textprop(3rem);
+
+        &:hover{
+            color: white;   
+        }
+    }
+}

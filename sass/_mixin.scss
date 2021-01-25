@@ -1,0 +1,12 @@
+@mixin flexprop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+}
+@mixin textprop($Fsize) {
+    color: aquamarine;
+    font-size: $Fsize;
+    letter-spacing: 0.3rem;
+    text-transform: capitalize;
+}

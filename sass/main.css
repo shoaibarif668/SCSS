@@ -1,0 +1,63 @@
+/*
+1:Can use operators
+2:Can use variables
+3:Nesting
+4:Mixing (with parameters)
+5:partials (writing and calling scss code from different files)
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: saddlebrown;
+}
+
+.main-header h1 {
+  color: aquamarine;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+
+.main-header h1:hover {
+  color: white;
+}
+
+.main-header h1::after {
+  content: " World";
+}
+
+.main-header p {
+  color: aquamarine;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+
+.main-header p:hover {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
