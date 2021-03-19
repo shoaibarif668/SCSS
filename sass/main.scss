@@ -9,7 +9,7 @@
 
 @import "var";
 @import "mixin";
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap');
 
 *{
     padding: 0px;
@@ -17,8 +17,9 @@
     box-sizing: border-box;
 }
 
-html{
+html,body{
     font-size: 62.5%; //10px by default for browser instead of 16px
+    font-family: 'Cormorant Unicase', serif;
 }
 
 .main-header{
@@ -30,7 +31,7 @@ html{
 
     h1{
         @include textprop(5rem);
-    
+        
         &:hover{
             color: white;   
         }
